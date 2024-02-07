@@ -8,13 +8,18 @@ use Illuminate\Http\Request;
 class UsersController extends Controller
 {
     public function create(Request $request){
+
+
         $data = $request->validate([
             'login' => 'nullable',
             'password'=> 'nullable',
             'name'=> 'nullable',
             'email' => 'nullable'
         ]);
-        return $user = User::create($data);
+
+        $user = User::create($data);
+        return $user;
+
     }
 
     public function view($id){
@@ -32,8 +37,10 @@ class UsersController extends Controller
         $data = $request->validate([
             'login' => 'nullable',
             'password'=> 'nullable',
-            'name'=> 'nullable',
-            'email' => 'nullable'
+            'company_name'=> 'nullable',
+            'bin'=>'nullable',
+            'email'=>'nullable',
+            'phone'=>'nullable'
         ]);
         $user = User::find($id)->update($data);
         return $user;

@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class essence_culture extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'seed_name',
+    ];
 }

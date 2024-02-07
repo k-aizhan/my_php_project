@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('report_3s', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('sales_date');
+            $table->integer('price');
+            $table->integer('quantity');
+
         });
     }
 

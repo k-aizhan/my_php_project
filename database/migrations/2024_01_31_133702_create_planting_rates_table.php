@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('planting_rates', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->integer('amount');
+            $table->integer('essence_cilture_id');
+            $table->string('grade');
+
         });
     }
 

@@ -14,6 +14,12 @@ return new class extends Migration
         Schema::create('report_2s', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('expertise_date_time');
+            $table->date('term_date');
+            $table->date('planting_date');
+            $table->integer('weight');
+            $table->integer('sales_quantity');
+            $table->integer('yield');
         });
     }
 
