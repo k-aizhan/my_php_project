@@ -5,12 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ReportThirds extends Model
+class ReportSecond extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'sales_date',
-        'price',
-        'quantity'
+        'expertise_date_time',
+        'term_date',
+        'planting_date',
+        'weight',
+        'sales_quantity',
+        'yield'
     ];
 }

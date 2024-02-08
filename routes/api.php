@@ -4,6 +4,9 @@ use App\Http\Controllers\EssenceCultureController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\RegionController;
 use App\Http\Controllers\PlantingRateController;
+use App\Http\Controllers\ReportFirstController;
+use App\Http\Controllers\ReportSecondController;
+use App\Http\Controllers\ReportThirdsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -49,3 +52,37 @@ Route::put('/essenceCultureController/{id}',[EssenceCultureController::class,'up
 Route::post('/essenceCultureController',[EssenceCultureController::class,'create']);
 
 Route::delete('/essenceCultureController/{id}',[EssenceCultureController::class,'delete'] );
+
+
+
+Route::get('/reportFirstController',[ReportFirstController::class,'list'] );
+
+Route::get('/reportFirstController/{id}',[ReportFirstController::class,'view'] );
+
+Route::put('/reportFirstController/{id}',[ReportFirstController::class,'update'] );
+
+Route::post('/reportFirstController',[ReportFirstController::class,'create']);
+
+Route::delete('/reportFirstController/{id}',[ReportFirstController::class,'delete'] );
+
+
+Route::get('/reportSecondController',[ReportSecondController::class,'list'] );
+
+Route::get('/reportSecondController/{id}',[ReportSecondController::class,'view'] );
+
+Route::put('/reportSecondController/{id}',[ReportSecondController::class,'update'] );
+
+Route::post('/reportSecondController',[ReportSecondController::class,'create']);
+
+Route::delete('/reportSecondController/{id}',[ReportSecondController::class,'delete'] );
+
+
+Route::get('/reportThirdsController',[ReportThirdsController::class,'list'] );
+
+Route::get('/reportThirdsController/{id}',[ReportThirdsController::class,'view'] );
+
+Route::put('/reportThirdsController/{id}',[ReportThirdsController::class,'update'] );
+
+Route::post('/reportThirdsController',[ReportThirdsController::class,'create']);
+
+Route::delete('/reportThirdsController/{id}',[ReportThirdsController::class,'delete'] );

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class essence_culture extends Model
+class EssenceCulture extends Model
 {
     use HasFactory;
     protected $fillable = [
