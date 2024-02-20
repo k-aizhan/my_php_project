@@ -16,10 +16,10 @@ return new class extends Migration
             $table->timestamps();
             $table->string('login')->nullable(true);
             $table->string('password')->nullable(true);
-            $table->integer('bin')->nullable(true);
+            $table->string('bin')->nullable(true);
             $table->string('company_name')->nullable(true);
             $table->string('email')->nullable(true);
-            $table->integer('phone')->nullable(true);
+            $table->string('phone')->nullable(true);
         });
     }
 
